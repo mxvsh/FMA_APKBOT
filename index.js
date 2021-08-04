@@ -85,7 +85,7 @@ bot.command('/help', (ctx) => {
                      
                     }) 
                     if (ctx.from.id == process.env.ADMIN) {
-                        ctx.reply('https://telegra.ph/File-Store-Bot-Admin-commands-07-17')
+                        ctx.reply('**https://telegra.ph/File-Store-Bot-Admin-commands-07-17**')
                 }
             })
 
