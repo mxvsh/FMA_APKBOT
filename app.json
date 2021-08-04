@@ -1,0 +1,38 @@
+{
+    "name": "FMA APK",
+    "description": "A Special Bot Made For FMA Apks",
+    "repository": "https://telegra.ph/file/d2a35663b79c09cdc138c.png",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["telegram", "fistorebot", "bot", "nodejs"],
+    "env": {
+        "TOKEN": {
+            "description": "Bot Token Provided By @BotFather",
+            "value": "token"
+        },
+        "DOMAIN": {
+            "description": "Enter your App Name",
+            "value": "domain"
+        },
+        "DB_URL": {
+            "description": "Get mongodb URL form https://www.mongodb.com/cloud/atlas ",
+            "value": "db"
+        },
+        "ADMIN": {
+            "description": "Enter your ID",
+            "value": "admin_id"
+        },
+        "BOTUSERNAME": {
+            "description": "Enter your bot username without @",
+            "value": "botusername"
+        },
+        "LOG_CHANNEL": {
+            "description": "Create a Private channel and enter Channel id to Monitor files,get user and File data",
+            "value": "channel"
+        }
+
+
+    },
+    "buildpacks": [{
+        "url": "heroku/nodejs"
+    }]
+}
