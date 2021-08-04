@@ -12,7 +12,7 @@ const saver = require('./database/fstorebot')
 
 //DATABASE CONNECTION 
 db.connect((err) => {
-    if (err) { console.log('Error Connection DB' + err); } else { console.log('DB Connected'); }
+    if (err) { console.log('Error Connection DB' + err); } else { console.log('DB Connected-Starting Bot...'); }
 })
 
 
@@ -35,11 +35,11 @@ bot.start(async(ctx) => {
     //welcoming message on /start and if there is a query available we can send files
 
     if (length == 1) {
-        ctx.reply(`<b> Hello 🙋‍♂️ <b>${ctx.from.first_name}</b>\n\nI am Media Search Bot For 𝗙𝗥𝗘𝗘𝗠𝗢𝗗𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\nHere You Can Search For Premium/Modded/Cracked Apk Files In Inline Mode. Just Press The Following Buttons & Start Searching. </b>`, {
+        ctx.reply(`<b> Hello 🙋‍♂️ <b>${ctx.from.first_name}</b>\n\nI am Mod Apk Search Bot For 𝗙𝗥𝗘𝗘𝗠𝗢𝗗𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\nHere You Can Search For Premium/Modded/Cracked Apk Files In Inline Mode. Just Press The Following Buttons & Start Searching. </b>`, {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Go Inline Search 🔎', switch_inline_query: '' }, { text: 'Join Channel 🔔', url: 't.me/Free_Mods_App' }]
+                    [{ text: 'Search Here 🔎', switch_inline_query_current_chat: '' }, { text: 'Join Channel 🔔', url: 't.me/Free_Mods_App' }]
                 ]
             }
         })
@@ -85,7 +85,7 @@ bot.command('/help', (ctx) => {
                      
                     }) 
                     if (ctx.from.id == process.env.ADMIN) {
-                        ctx.reply('**https://telegra.ph/File-Store-Bot-Admin-commands-07-17**')
+                        ctx.reply('<b>https://telegra.ph/File-Store-Bot-Admin-commands-07-17</b>')
                 }
             })
 
@@ -102,7 +102,7 @@ bot.command('/help', (ctx) => {
                      
                     }) 
                     if (ctx.from.id == process.env.ADMIN) {
-                        ctx.reply('**https://telegra.ph/File-Store-Bot-Admin-commands-07-17**')
+                        ctx.reply('<b>https://telegra.ph/File-Store-Bot-Admin-commands-07-17</b>')
                 }
             })
           
