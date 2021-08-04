@@ -350,7 +350,7 @@ bot.command('/help', (ctx) => {
                             caption: item.caption,
                             reply_markup: {
                                 inline_keyboard: [
-                                    [{ text: "🔎Search again", switch_inline_query_current_chat: '' },{ text: 'Join Channel 🔔', url: 'http://t.me/share/url?url=Checkout%20%40FMA_SearchBot%20for%20searching%20files' }]
+                                    [{ text: "🔎Search again", switch_inline_query_current_chat: '' },{ text: 'Share Bot', url: 'http://t.me/share/url?url=Checkout%20%40FMA_SearchBot%20for%20searching%20files' }]
                                 ]
                             }
                         }
