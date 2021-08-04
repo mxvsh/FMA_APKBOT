@@ -105,7 +105,26 @@ bot.command('/help', (ctx) => {
                         ctx.reply('https://telegra.ph/File-Store-Bot-Admin-commands-07-17')
                 }
             })
+          } else {
+                ctx.replyWithDocument(res.file_id, {
+                    caption: `<b>${res.caption}</b>`,
+                    parse_mode: 'HTML'
+                })
+            }
 
+        })
+    }
+    //saving user details to the database
+
+    saver.saveUser(user)
+
+})
+
+//DEFINING POP CALLBACK
+bot.action('POP', (ctx) => {
+    ctx.deleteMessage()
+    ctx.reply('Send me a file Boss')
+})
 
 
         //remove files with file_id
