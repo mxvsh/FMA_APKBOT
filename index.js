@@ -367,7 +367,7 @@ bot.command('/help', (ctx) => {
 
 
         //heroku config
-        domain = `${process.env.DOMAIN}.herokuapp.com`
+        domain = `${process.env.DOMAIN}-production.up.railway.app`
         bot.launch({
             webhook: {
                 domain: domain,
